@@ -10,6 +10,21 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+}
+
+.items {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px;
+  justify-content: center;
+  align-content: center;
+}
+
+.item {
+  max-width: 200px;
+  text-align: center;
 }
 
 /* do not edit this footer */
@@ -24,3 +39,9 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/*
+* 모든 항목 수평 가운데 정렬
+* title 가운데 정렬
+*
+* */

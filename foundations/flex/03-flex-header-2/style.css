@@ -12,6 +12,15 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .profile-image {
@@ -45,4 +54,26 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
 }
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+
+/*
+* HTML을 약간 수정
+* flex container의 중첩
+*   컨테이너 안에 두 개의 왼 오 컨테이너
+*     왼: .logo, .links -> margin auto in links
+*     오: .notification .profile-image -> margin auto in notifi
+* 모든 항목이 헤더 안에서 수직으로 가운데 정렬 
+*   - .header display flex, align-items: center, 
+* 수평으로 배열
+* 각 항목 사이에 16px -> gap 사용 
+*
+* */
